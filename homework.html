@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>设计稿</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #top {
+            background-color: black;
+            height: 80px;
+        }
+
+        #banner {
+            background-color: rgb(101, 192, 101);
+            height: 260px;
+            position: relative;
+        }
+
+        #banner ul {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-bottom: 10px;
+            margin-right: 20px;
+
+        }
+
+        #content {
+            position: static;
+        }
+
+        #logo {
+            padding: 30px;
+            margin-left: 16%;
+        }
+
+        #main{
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #first-1,
+        #first-2 {
+            flex: 2;
+        }
+
+        #first-3 {
+            flex: 1;
+        }
+
+        #sec-1,
+        #sec-2,
+        #sec-3,
+        #sec-4 {
+            flex: 1;
+        }
+
+        #third-1,
+        #third-2,
+        #third-3 {
+            flex: 1;
+        }
+
+        .column {
+            display: flex;
+            height: 240px;
+        }
+
+        .box {
+            border: 1px solid gray;
+            padding: 80px;
+        }
+
+        #footer {
+            background-color: black;
+            height: 80px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #top,
+        #footer {
+            color: white;
+        }
+
+        #top ul li {
+            display: inline;
+        }
+
+        #top ul {
+            float: right;
+            margin-right: 100px;
+            margin-top: 10px;
+        }
+
+        #top ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 2px;
+        }
+
+        #banner a:hover {
+            background-color: lightgray;
+            padding: 8px 8px;
+        }
+
+        #nav a{
+            margin-right: 0px;
+            background-color: lightblue;
+            padding: 8px;
+            border:1px solid lightcoral;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        #banner li a {
+            text-decoration: none;
+            padding: 4px 8px;
+            background-color: lightgray;
+            margin-right: 2px;
+            font-size: 12px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top">
+            <ul>
+                <li><a href="#">register</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">logout</a></li>
+            </ul>
+            <div id="logo">
+                <p>LOGO</p>
+            </div>
+        </div>
+        <div id="banner">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="nav">
+                <ul>
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">详情</a></li>
+                    <li><a href="#">博客</a></li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <div id="first" class="column">
+                    <div id="first-1" class="box">
+                        <p>This is content1</p>
+                    </div>
+                    <div id="first-2" class="box">
+                        <p>content2</p>
+                    </div>
+                    <div id="first-3" class="box">
+                        <p>content3</p>
+                    </div>
+                </div>
+                <div id="sec" class="column">
+                    <div id="sec-1" class="box">
+                        <p>content4</p>
+                    </div>
+                    <div id="sec-2" class="box">
+                        <p>content5</p>
+                    </div>
+                    <div id="sec-3" class="box">
+                        <p>content6</p>
+                    </div>
+                    <div id="sec-4" class="box">
+                        <p>content7</p>
+                    </div>
+                </div>
+                <div id="third" class="column">
+                    <div id="third-1" class="box">
+                        <p>content8</p>
+                    </div>
+                    <div id="third-2" class="box">
+                        <p>content9</p>
+                    </div>
+                    <div id="third-3" class="box">
+                        <p>content10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>@copyright jofejafdfoajdfMJfd</p>
+        </div>
+    </div>
+</body>
+
+</html>
