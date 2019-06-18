@@ -35,6 +35,7 @@
 
         #content {
             position: static;
+            margin-top: 10px;
         }
 
         #logo {
@@ -42,8 +43,9 @@
             margin-left: 16%;
         }
 
-        #main{
-            width: 960px;
+        #main {
+            margin-top: 10px;
+            max-width: 960px;
             margin: 0 auto;
         }
 
@@ -77,6 +79,7 @@
         .box {
             border: 1px solid gray;
             padding: 80px;
+            margin: 5px;
         }
 
         #footer {
@@ -92,7 +95,7 @@
         }
 
         #top ul li {
-            display: inline;
+            float: left;
         }
 
         #top ul {
@@ -113,12 +116,46 @@
             padding: 8px 8px;
         }
 
-        #nav a{
-            margin-right: 0px;
-            background-color: lightblue;
-            padding: 8px;
-            border:1px solid lightcoral;
+        #nav ul {
+            overflow: hidden;
+            width: 960px;
+            margin: 0 auto;
+            line-height: 40px;
         }
+
+        #nav {
+            position: relative;
+        }
+
+        #nav a {
+            margin-right: 0px;
+            background-color: lightgray;
+            padding: 8px 16px;
+            border: 1px solid gray;
+            border-top-left-radius: 0.6em;
+            border-top-right-radius: 0.6em;
+            color: black;
+        }
+
+        #nav a:hover {
+            border-bottom: 1px solid white;
+            background-color: white;
+        }
+
+        #nav .hover{
+            border-bottom: 1px solid white;
+            background-color: white;
+        }
+
+        #hr {
+            position: absolute;
+            bottom: 0px;
+            z-index: -1;
+            border-top: 1px solid lightgray;
+            width: 100%;
+
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -126,7 +163,7 @@
         }
 
         ul li {
-            display: inline;
+            float: left;
         }
 
         #banner li a {
@@ -163,10 +200,11 @@
         <div id="content">
             <div id="nav">
                 <ul>
-                    <li><a href="#">主页</a></li>
+                    <li><a href="#" class="hover">主页</a></li>
                     <li><a href="#">详情</a></li>
                     <li><a href="#">博客</a></li>
                 </ul>
+                <div id="hr"></div>
             </div>
 
             <div id="main">
