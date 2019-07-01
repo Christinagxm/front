@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>社交首页</title>
+    <style>
+
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-size: 10px;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
+        }
+
+        .column {
+            float: left;
+            /* border: 1px solid red; */
+            height: 100%;
+            min-height: 100%;
+        }
+
+        #nav {
+            height: 100%;
+            width: 110px;
+            background-color: rgb(29, 37, 49);
+            overflow: hidden;
+        }
+
+        #menu {
+            width: 240px;
+            background-color: rgb(34, 44, 60);
+        }
+
+        #content {
+            width: calc(100% - 360px);
+        }
+
+        .con-wrap{
+            display: flex;
+        }
+        
+        .con-header{
+            height: 80px;
+        }
+        .col-settings{
+            height: 70px;
+            border: 1px solid lightgray;
+            border-right: none;
+            border-left: none;
+        }
+
+        .con-wrap > div:nth-of-type(1) {
+            width: 400px;
+            border-right: 1px solid lightgray;
+        }
+
+        .con-wrap > div:nth-of-type(2){
+            width: calc(100% - 410px);
+        }
+        .msg-list{
+            display: flex;
+            flex-direction: column;
+        }
+        .msg-list section{
+            flex: 1 130px;
+        }
+
+
+        #nav img {
+            position: fixed;
+            left: 20px;
+            display: block;
+        }
+
+        #fix01 {
+            top: 20px;
+        }
+
+        #fix02 {
+            top: 100px;
+        }
+
+        #fix03 {
+            top: 180px;
+        }
+
+        #fix04 {
+            top: 260px;
+        }
+
+        #nav #fix05 {
+            position: fixed;
+            bottom: 50px;
+            left: 20px;
+        }
+
+        #nav #fix06 {
+            position: fixed;
+            bottom: 50px;
+            left: 50px;
+        }
+
+        .menu {
+            padding: 2em;
+            line-height: 1.5em;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tips-right {
+            float: right;
+        }
+
+        .setting-icon {
+            float: right;
+        }
+
+        .icon-left {
+            float: left;
+            margin-right: 0.4em;
+        }
+
+        .ads-fix {
+            position: fixed;
+            bottom: 1em;
+            left: 12em;
+        }
+
+        .self-info{
+            position: fixed;
+            right: 50px;
+            top: 10px;
+            /* float:right; */
+        }
+        h1{
+            /* justify-content: center; */
+            padding: 20px;
+        }
+        section div{
+            padding: 10px;
+        }
+        section{
+            border-bottom: 1px solid lightgray;
+        }
+        .per-pic{
+            float: left;
+            margin-right: 20px;
+        }
+        .per-name{
+            display: block;
+            font-size: 1.3em;
+        }
+        .per-org{
+            display: block;
+            font-size: 1em;
+            color: lightgray;
+        }
+        .per-msg{
+            
+        }
+        .msg-new{
+            display: block;
+            background:#239ef5;
+            border-radius: 1.5em;
+            padding: 3px;
+            height: 15px;
+            width: 15px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="nav" class="column">
+        <a href="#"><img src="social-imgs/item1.png" id="fix01"></a>
+        <a href="#"><img src="social-imgs/item2.png" id="fix02"></a>
+        <a href="#"><img src="social-imgs/item3.png" id="fix03"></a>
+        <a href="#"><img src="social-imgs/add.png" id="fix04"></a>
+        <a href="#"><img src="social-imgs/erweima.png" id="fix05"></a>
+        <a href="#"><img src="social-imgs/Settings.png" id="fix06"></a>
+
+
+    </div>
+    <div id="menu" class="column">
+        <div class="menu">
+            <div class="menu-title">
+                <span>MENU</span><span class="setting-icon"><img src="social-imgs/Settings.png"></span>
+            </div>
+            <div class="menu-con">
+                <p><span>Overview</span><span class="tips-right"></span></p>
+                <p><span>Sales</span><span class="tips-right"></span></p>
+                <p><span>Your Staff</span><span class="tips-right"></span></p>
+                <p><span>Analysies & Targeting</span><span class="tips-right"></span></p>
+                <p><span>What's New</span><span class="tips-right"></span></p>
+
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-title">
+                <span>PRODUCTS</span><span class="setting-icon"><img src="social-imgs/Settings.png"></span>
+            </div>
+            <div class="menu-con">
+                <p><span class="icon-left"><img src="social-imgs/Books.png"></span><span>Books</span><span
+                        class="tips-right"></span></span></p>
+                <p><span class="icon-left"><img src="social-imgs/Video.png"></span><span>Turials</span><span
+                        class="tips-right"></span></span></p>
+                <p><span class="icon-left"><img src="social-imgs/Painting.png"></span><span>Stocks</span><span
+                        class="tips-right"></span></span></p>
+                <p><span class="icon-left"><img src="social-imgs/Chart.png"></span><span>Intrographics</span><span
+                        class="tips-right"></span></span></p>
+
+
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-title">
+                <span>DASHBOARD</span><span class="setting-icon"><img src="social-imgs/Settings.png"></span>
+            </div>
+            <div class="menu-con">
+                <p><span>Messages</span><span class="tips-right"></span></p>
+                <p><span>Integrations</span><span class="tips-right"></span></p>
+                <p><span>Connections</span><span class="tips-right"></span></p>
+                <p><span>AccountSettings</span><span class="tips-right"></span></p>
+                <p><span>App Settings</span><span class="tips-right"></span></p>
+            </div>
+        </div>
+        <div class="ads-fix">
+            <p><span>Monthly Goals &nbsp;&nbsp; $580/$3200</span></p>
+            <p><span><img src=""></span></p>
+        </div>
+    </div>
+    <div id="content" class="column">
+        <div class="con-header">
+                <div class="self-info">
+                        <a href="#" class="icon-left"><img src="social-imgs/p01.png"></a>
+                        <p>
+                                <span class="tips-right"><img src="social-imgs/right.png"></span>
+                                <span>Jordan J</span>
+                                <span>Administrator</span>
+                        </p>
+                    </div>
+            <h1>Messages</h1>
+        </div>
+        <div class="con-wrap">
+            <div class="col">
+                <div class="col-settings">
+                    <input type="text" placeholder="Search"/>
+                </div>
+                <div class="msg-list">
+                    <section>
+                        <div>
+                            <span class="per-pic"><a><img src="social-imgs/p02.png"></a></span>
+                            <span class="per-name">Wictor weber</span>
+                            <span class="per-org">Adobe</span>
+                            <span class="tips-right per-time">8m</span>
+                        </div>
+                        <div>
+                            <p><span class="per-msg">jodfjaofjaofjodjfdjfmsa</span>
+                            <span class="msg-new tips-right">4</span></p>
+                        </div>
+                    </section>
+                    <section></section>
+                </div>
+            </div>
+            <div class="col">
+                    <div class="col-settings"></div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
